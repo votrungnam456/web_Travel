@@ -50,11 +50,6 @@ main{
     display: flex;
     justify-content: center;
 }
-.side-1{
-    padding: 0;
-    margin: 0;
-  
-}
 li{
     list-style: none;
    
