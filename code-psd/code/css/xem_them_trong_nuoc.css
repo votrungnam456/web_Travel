@@ -38,29 +38,6 @@ a{
 .key{
     border-bottom: 3px solid black ;  
 }
-.big-image{
-    margin-top: 27px;
-    position: relative;
-
-}
-
-.big-image img{
-    height:397px; width:100%; max-width: 100%;
-}
-.big-image button{
-    background-color: skyblue;
-    margin-left: 0px;
-}
-.form-img{
-    position: absolute;
-    top:365px;
-    left: 400px;
-    
-}
-.category{
-    min-width: 200px;
-    min-height: 30px;
-}
 main{
     display: flex;
     justify-content: center;
@@ -77,6 +54,7 @@ li{
 .main{
     display: flex;
     margin-top: 55px;
+    justify-content: space-around;
 }
 
 h2{
@@ -124,22 +102,22 @@ footer{
 }
 
 button{
-    margin-left: 158px;
+    /* margin-left: 158px; */
     background-color: #32AAD6;
     color: white;
     padding: 7px;
     border: none;
 }
 .para{
-    min-height: 420px;
+    min-height: 400px;
 }
 .para-2{
-    margin-top: 40px;
-    min-height: 420px;
+    margin-top: 10px;
+    min-height:400px;
 }
 .para-3{
     margin-top: 10px;
-    min-height: 420px;
+    min-height: 400px;
 }
 .id{
     color:#32AAD6;
@@ -176,7 +154,7 @@ h1{
     margin-left: 45%;
 }
 #trong-nuoc,#ngoai-nuoc{
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
 
     background-size: cover;
 }
@@ -194,9 +172,12 @@ h1{
 
 
 
-s
+
 
 .mySlides {display: none;}
+.mySlides img{
+    height: 30%; width:100%; max-width: 100%;
+}
 .slideshow-container {
     max-width: 1000px;
     position: relative;
