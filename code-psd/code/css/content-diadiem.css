@@ -83,7 +83,7 @@ h2{
 footer{
     display: flex;
     height: 100px;
-    margin-top: 74px;
+    margin-top: 20px;
     justify-content: space-between;
 }
 .one{
@@ -160,6 +160,9 @@ h1{
     background-image: url("../images/background.jpg");
 
     background-size: cover;
+}
+.navi a:hover{
+    color: skyblue;
 }
 
 
