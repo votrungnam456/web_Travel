@@ -1,25 +1,48 @@
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+function plusSlides() {
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
+    showSlides();
+  }
+  function minusSlides() {
+    slideIndex--;
+    showSlides();
+  }
+// function showSlides() {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides");
+
+//     var dots = document.getElementsByClassName("dot");
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) { slideIndex = 1 }
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     console.log(slides)
+//     console.log(slides[slideIndex - 1])
+//     slides[slideIndex - 1].style.display = "block";
+//     dots[slideIndex - 1].className += " active";
+//     setTimeout(showSlides, 5000); // Change image every 2 seconds
+// }
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (slideIndex > slides.length) {slideIndex= 1}
+     if (slideIndex < 1) {slideIndex= 3}  
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    console.log(slides)
-    console.log(slides[slideIndex - 1])
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+   setInterval(plusSlides, 5000);
 
 let trong_nuoc = ["Tp.Hồ Chí Minh", "Hà Nội", "Nha Trang", "Sapa", "Vũng Tàu", "Vịnh Hạ Long", "Cần Thơ", "Đà Lạt", "Hà Giang", "Phú Quốc", "Hội An", "Tuy Hòa - Phú Yên"];
 let ngoai_nuoc = ["Mỹ", "Malaysia", "Pháp", "Trung Quốc", "Lào", "Campuchia", "Đài Loan", "Italia", "Nhật Bản", "Thái Lan", "Hàn Quốc", "Singapore"];
